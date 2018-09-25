@@ -1,0 +1,39 @@
+title: IBN 2018
+description: A course on the BonVision modules developed by NeuroGEARS, Ltd.
+funding: 
+funding_logo: 
+funding_url: 
+google_analytics:
+theme: minima
+baseurl: "/ibn-2018"
+
+twitter_username: bonsai_rx
+github_username:  neurogears
+
+plugins:
+  - jekyll-seo-tag
+
+include:
+  - _pages
+  - _slides
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - "**README.md"
+
+header_pages:
+  - _pages/slides.md
+  - _pages/worksheets.md
+
+collections:
+  # Ideally we would use collections for slides but this
+  # breaks reveal.js markdown processing because of issue:
+  # https://github.com/jekyll/jekyll/issues/6209
+  # slides:
+  #   output: true
+  #   permalink: /:collection/:path/
+  
+  worksheets:
+    output: true
+    permalink: /:collection/:path/
